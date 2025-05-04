@@ -28,8 +28,8 @@ scaler = StandardScaler()
 X_train = scaler.fit_transform(X_train)
 X_test = scaler.transform(X_test) 
 
-from sklearn.linear_model import LogisticRegression
-log_model = LogisticRegression()
+from sklearn.ensemble import RandomForestClassifier
+log_model = RandomForestClassifier()
 log_model.fit(X_train, Y_train)
 
 
